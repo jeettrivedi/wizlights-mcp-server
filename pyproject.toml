@@ -21,5 +21,10 @@ build-backend = "hatchling.build"
 [tool.setuptools]
 py-modules = ["wizlights_mcp_server"]
 
+[dependency-groups]
+dev = [
+    "pre-commit>=4.2.0",
+]
+
 [project.scripts]
 wizlights-mcp-server = "wizlights_mcp_server.__main__:main"
