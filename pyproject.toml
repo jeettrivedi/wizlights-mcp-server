@@ -6,9 +6,20 @@ authors = [
     { name="Jeet Trivedi", email= "jtriv@protonmail.com" },
 ]
 readme = "README.md"
+keywords = ["MCP", "wizlights"]
 requires-python = ">=3.13"
 dependencies = [
     "mcp[cli]>=1.6.0",
     "pydantic>=2.11.2",
     "pywizlight>=0.6.2",
 ]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.setuptools]
+py-modules = ["wizlights_mcp_server"]
+
+[project.scripts]
+wizlights-mcp-server = "wizlights_mcp_server.__main__:main"

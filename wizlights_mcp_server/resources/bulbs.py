@@ -2,8 +2,8 @@ from mcp.server.fastmcp import FastMCP
 from pywizlight import discovery
 from pywizlight.scenes import SCENES
 
-from common.bulbs import get_bulb_state
-from common.validators import is_valid_ip_address
+from wizlights_mcp_server.common.bulbs import get_bulb_state
+from wizlights_mcp_server.common.validators import is_valid_ip_address
 
 
 def register_bulb_resources(mcp: FastMCP) -> None:

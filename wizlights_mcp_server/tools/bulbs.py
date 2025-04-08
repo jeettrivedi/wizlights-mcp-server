@@ -1,9 +1,9 @@
 from pywizlight import PilotBuilder, wizlight
 from pywizlight.scenes import get_id_from_scene_name
 
-from common.bulbs import get_bulb_state
-from common.validators import is_valid_ip_address
-from models.state import StateModel
+from wizlights_mcp_server.common.bulbs import get_bulb_state
+from wizlights_mcp_server.common.validators import is_valid_ip_address
+from wizlights_mcp_server.models.state import StateModel
 
 
 def register_bulb_tools(mcp):
@@ -12,9 +12,7 @@ def register_bulb_tools(mcp):
         """Set a specific bulb's state"""
 
         if not is_valid_ip_address(ip):
-            return {
-                "error": "Invalid IP address. Please provide a valid IP address."
-            }
+            return {"error": "Invalid IP address. Please provide a valid IP address."}
 
         bulb = wizlight(ip)
 
