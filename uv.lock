@@ -301,14 +301,14 @@ wheels = [
 
 [[package]]
 name = "pywizlight"
-version = "0.6.2"
+version = "0.6.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/83/ff/93994458ed65462ce9dca20b2b0354350a269bec17734ae5930b6b8d08a2/pywizlight-0.6.2.tar.gz", hash = "sha256:e5dc7d1a65c7295f4ce9ffaf3c0fab7bf2cc06bdcf5bb65f8efb9db718a104c4", size = 42382, upload-time = "2025-03-26T20:58:08.92Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/79/1a/974d1313525cd7098ab4a14efb2420a3e64a26f71366abd778bc64d7c010/pywizlight-0.6.6.tar.gz", hash = "sha256:b6c57ee128a5867548181ae9b0a0d8b4333863734a7f80375d42fcda97293100", size = 48863, upload-time = "2026-08-05T09:49:44.791Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/38/c4/0ab7c736599ff16abfb544a235839ffb2a096101569e958eb7a54af84c20/pywizlight-0.6.2-py3-none-any.whl", hash = "sha256:700b53cb657f9767f6a4c1044d81cd42ed326b379491df55cbd9b45754f1a2aa", size = 56972, upload-time = "2025-03-26T20:58:07.368Z" },
+    { url = "https://files.pythonhosted.org/packages/71/63/eb4a4d70539f934a46ae85285a890ef6e9ec3731cf192582a27d725ed5ac/pywizlight-0.6.6-py3-none-any.whl", hash = "sha256:71afd52e1c60ab1002afea9068d3c41243d792c3f824b0eb74f2a3f0fdd96d04", size = 64176, upload-time = "2026-08-05T09:49:43.536Z" },
 ]
 
 [[package]]
@@ -466,7 +466,7 @@ dev = [
 requires-dist = [
     { name = "mcp", extras = ["cli"], specifier = ">=1.6.0" },
     { name = "pydantic", specifier = ">=2.11.2" },
-    { name = "pywizlight", specifier = ">=0.6.2" },
+    { name = "pywizlight", specifier = ">=0.6.6" },
 ]
 
 [package.metadata.requires-dev]
